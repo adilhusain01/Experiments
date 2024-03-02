@@ -1,0 +1,39 @@
+<!-- Span is inline element which has a width of its content -->
+<!-- Div is a block element which has a width of its parent -->
+
+<!-- Inline-block makes any inline element to work as a block but an
+inline one and can set its width and height -->
+<!-- Block peoperty makes any inline  element to block  -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            border: 1px solid red;
+            height: 200px;
+        }
+        #span1{
+            border: 1px dotted green;
+            height: 100;
+            width: 100;
+            display: inline-block;
+        }
+        #div2{
+            border: 1px dotted green;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="div1">
+        <span id="span1">Hi</span>
+        <div id="div2">Okay</div>
+    </div>
+    
+</body>
+</html>

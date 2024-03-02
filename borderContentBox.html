@@ -1,0 +1,38 @@
+<!-- Content-Box allies width or height to inner content
+and padding and border measurement are added to it separately -->
+
+<!-- Border-Box includes inner content width and height with borders
+and padding measurements -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            border: 10px solid red;
+            box-sizing: content-box;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+        }
+        
+        #div2{
+            border: 10px solid red;
+            box-sizing: border-box;
+            height: 200px;
+            width: 200px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="div1"> 200 + 10 + 10 + 10 + 10</div><br>
+    <div id="div2"> 200 </div>
+    
+</body>
+</html>
